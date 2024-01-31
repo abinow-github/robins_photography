@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&family=Kalnia:wght@300;400;500&family=Libre+Caslon+Display&family=Open+Sans:ital@1&family=Raleway:ital,wght@0,300;1,200;1,300;1,500&family=Work+Sans:wght@700&display=swap');
+
+/* Custom styles for the navigation bar */
+
+body {
+    margin: 0;
+    padding: 0;
+   
+    /* overflow: hidden; */
+   
+    
+    
+}
+
+header{
+    height: 100vh;
+}
+.nav-link,.nav-link:hover{
+  color: white;
+}
+.crsl{
+    height: 100vh;
+}
+/* .navbar-toggler {
+  outline: none;
+  box-shadow: none;
+} */
+
+/* .navbar-toggler:hover {
+  background-color: transparent; 
+} */
+
+.navbar {
+    background-color: transparent; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* height: 50px; */
+    z-index: 1000;
+    transition: background-color 0.5s ease-in-out;  /
+}
+
+nav a,nav a:hover{
+  color: white ;
+}
+.dropdown-item{
+  font-size: 13px !important;
+}
+.navbar-brand img {
+    width: 55%;
+    height: auto;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 15px;
+}
+.dropdown-menu ul a{
+  font-size: 13px !important;
+  font-weight: normal !important;
+}
+
+.dropdown-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 0;
+  transform-origin: top;
+  transform: translateY(-20px);
+  border:none;
+  
+}
+
+.nav-item:hover .dropdown-menu {
+  max-height: 400px; /* Adjust this value based on your content height */
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  transform-origin: top;
+}
+
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+
+/* .navbar-nav .nav-link {
+    color: #fff;
+} */
+
+/* Custom styles for the carousel */
+.carousel-inner {
+    height: 100vh; /* Set the height of the carousel */
+}
+.carousel .p{
+  font-family: 'Dancing Script', cursive;
+  position: absolute;
+  bottom: 4px;
+  color: white;
+  z-index: 1;
+  left: 44%;
+  font-size: 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-item {
+    position: relative;
+}
+.carousel-item img{
+  width: 100%;
+}
+.carousel-caption-r {
+    position: absolute;
+   
+    top: 45%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 500PX;
+    height: 50%;
+     /* Text color for carousel captions */
+}
+.carousel-caption {
+  position: absolute;
+  top: 38%;
+  left: 175px;
+  transform: translate(-50%, -50%);
+  text-align: justify;
+  color: white;
+  width: 324PX;
+  height: 50%;
+}
+.carousel-caption span{
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+}
+.carousel-caption .p-r{
+  font-size: 32px;
+  
+  font-family: 'Work Sans', sans-serif;
+ 
+  text-align: justify;
+  font-weight: 700;
+}
+.carousel-caption p{
+  font-size: 13px;
+  font-weight: 600;
+  text-align: justify;
+}
+.carousel-caption-l{
+  position: absolute;
+   
+  top: 45%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 500PX;
+  height: 50%; 
+}
+.carousel-caption-r span,.carousel-caption-l span{
+  font-size: 22px;
+}
+
+.carousel-caption-r p,.carousel-caption-l p{
+  font-size: 17px;
+    font-weight: 600;
+    text-align: justify;
+
+}
+
+.carousel-caption-r .p-r,.carousel-caption-l .p-r{
+    font-size: 26px;
+    
+    font-family: 'Work Sans', sans-serif;
+   
+    text-align: justify;
+    font-weight: 700;
+}
+
+
+
+
+.navbar-scrolled {
+    background-color:white;
+   
+  } 
+
+@media screen and (max-width:767px) {
+  
+
+  .navbar-brand img {
+    width: 30%;
+     
+}  
+.navbar-toggler {
+  outline: none; /* Remove outline on small screens */
+  box-shadow: none; /* Remove box shadow on small screens */
+}
+.navbar.navbar-bg {
+  background-color: #fff; /* Background color change for small screens */
+  
+}
+.navbar a{
+  color: black !important;
+}
+
+.navbar-clicked {
+    background-color: rgb(160, 154, 154);
+     /* Change this to your desired background color */
+  }
+header{
+    height: 700px !important;
+}
+ header .carousel-item{
+    height: 700px;
+    width: auto;
+}
+header .carousel-item img{
+    width: 100% !important;
+    height: 700px !important;
+}
+
+
+
+.ab-img img{
+    width: 100% !important;
+}
+.sm-hide{
+    display: none;
+}
+.about-us-1{
+    background: rgb(77, 72, 72);
+    
+    
+}
+
+.lg-hide{
+    overflow: hidden;
+}
+.lg-hide h3{
+  color: white;
+}
+.lg-hide .hide-part{
+  margin-top: 10px;
+  padding: 10px;
+}
+.lg-hide a{
+  text-align: center;
+}
+.main_back p{
+  font-size: 20px !important;
+}
+.un-img img{
+  width: 100%;
+}
+.carousel .p{
+  bottom: 40px;
+  left: 27%;
+}
+.about_col p{
+  text-align: justify;
+}
+
+}
+.hidden-section{
+  display: none;
+}
+.navbar button{
+  position: fixed;
+  top: 16px;
+  right: 8px;
+ 
+}
+
+
+/* about */
+.about_col{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: 25px 0;
+
+}
+.about_col h4{
+  word-spacing: 2px;
+    letter-spacing: 2px;
+    font-family: 'Work Sans', sans-serif;
+}
+.about_col p{
+  color: gray;
+}
+.about_image{
+  width: 117px;
+}
+.about_image img{
+  width: 100%;
+}
+.un-img{
+  text-align: center;
+}
+
+@media screen and (min-width:990px) {
+    .lg-hide{
+        display: none;
+    }
+    .navbar{
+      height: 50px;
+    }
+    .cnt .p1,.cnt-1 .p1{
+      line-height: 29px;
+    }
+   
+   
+     /* main_back section */
+    
+}
+.main_back{
+    background-image: url("../img/blog/m1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.main_back p{
+  color: white;
+    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Work Sans', sans-serif; */
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 65px;
+    font-size: 30px;
+}
+.main_back .cntr{
+    width: 500px;
+}
+/* card */
+
+.slider-sec .card-container {
+  display: flex;
+  overflow: hidden;
+}
+.slider-sec{
+  margin-top: 50px;
+ 
+}
+.slider-sec hr{
+  height: 4px;
+    color: gray;
+    opacity: 0;
+  
+   
+    margin: 22px 450px;
+    transition: 3s;
+
+}
+.slider-sec hr.animated{
+  opacity: 1;
+}
+.slider-sec h2{
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  word-spacing: 1px;
+  letter-spacing: 6px;
+margin: 25px 0;
+ 
+}
+.slick-initialized .slick-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+  }
+  
+  
+  
+  
+  .cards{
+    height: 150px;
+ 
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+    align-items: center;
+    word-spacing: 3px;
+    text-align: center;
+    background: #2f3131;
+    
+    color: white;
+    /* border-radius: 62px; */
+    margin-bottom: 25px;
+  }
+  .cards p{
+    font-family: 'Work Sans', sans-serif;
+  }
+ /* ----------------------------------------------
+ * Generated by Animista on 2024-1-5 15:35:22
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-fwd-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+            transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+            transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+
+
+.card-1.animated{
+  /* -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
+  animation: slide-in-fwd-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+ 
+.section-9 .card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0 5px;
+  height: 240px !important;
+  width: 300px;
+  
+}
+
+.review-user img {
+  /* width: 100%; */
+  height: auto;
+  display: block;
+  width: 16%;
+}
+
+.review-slider .card-content {
+  padding: 5px;
+  text-align: left !important;
+}
+
+ 
+ .section-9 p {
+  color: #555;
+  text-align: left;
+  font-size: smaller;
+  padding: 5px;
+}
+
+.rating {
+  text-align: left;
+  
+}
+.review-slider .rating{
+  margin-top: -28px;
+  margin-left: 60px;
+}
+
+.star {
+  font-size: 20px;
+  color: #FFD700; /* Golden yellow color for filled stars */
+  margin-right: 5px;
+}
+
+ .icon-g{
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: flex-end;
+}
+.icon-g img{
+  width: 100%;
+}
+.review-user{
+ margin: 5px;
+ display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 54px;
+}
+.review-user p{
+  margin-left: auto;
+}
+.user-name{
+  font-size: large;
+  font-weight: 600;
+  margin-right: auto;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slick-prev,.slick-next{
+  display: none !important;
+}
+
+.review-header{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 30px;
+
+ 
+
+}
+.review-img{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+.review-img img{
+  width: 100%;
+}
+.review-slider{
+width: 70%;
+}
+.section-9{
+  padding: 10px;
+  display: flex;
+  background: #e6edf3;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+@media screen and (max-width:600px) {
+
+.review-slider{
+width: 100% !important;
+
+}
+.review-slider .card{
+  width: 95%;
+}
+.section-9{
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+   
+<style>
+     /* font-family: 'Dancing Script', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Kalnia', serif;
+font-family: 'Libre Caslon Display', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Work Sans', sans-serif; */
+  </style>
+<body>
+
+    
+    <header>
+      
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="assets/img/kerala_best_photography-removebg-preview.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse nav-list" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about_us.html"> ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="blog.html">BLOG</a>
+                  </li>
+
+                    <li class="nav-item dropdown" onmouseover="showGallery()">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownGallery" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                           SERVICES
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownGallery" id="galleryDropdown">
+                            <li><a class="dropdown-item" href="wedding_photography.html">WEDDING PHOTOGRAPHY</a></li>
+                            <li><a class="dropdown-item" href="bridal_sessions.html">BRIDAL SESSIONS</a></li>
+                            <li><a class="dropdown-item" href="new_born.html">NEWBORN PHOTOGRAPHY </a></li>
+                            <li><a class="dropdown-item" href="couple_photography.html">COUPLE PHOTOGRAPHY</a></li>
+                            <li><a class="dropdown-item" href="family_photography.html">FAMILY PHOTOSHOOT</a></li>
+                            <li><a class="dropdown-item" href="maternity_photography.html">MATERNITY PHOTOSHOOT</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+<div class="head_img sm-hide blog_head">
+  <img src="assets/img/contact/wedding photography in kerala.jpg" alt="" >
+</div>
+<div class="head_img lg-hide">
+  <img src="assets/img/contact/best wedding photography in kerala.jpg" alt="">
+</div>
+</header>
+
+
+<div class="container map">
+<div class="row w-100">
+    <div class="col-lg-6 col-md-6 my-4">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31339.181500768267!2d76.009025!3d10.933302!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6b9156c98c301f40!2sRobins%20Photography!5e0!3m2!1sen!2sus!4v1661924756635!5m2!1sen!2sus"
+        class="w-100" height="400" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="col-lg-6 col-md-6 my-4 d-flex map-content">
+      <div>
+        <span>our location</span>
+        <h4>We are available for worldwide orders.</h4>
+        <p>Robins photography is available for worldwide photoshoot!.
+            If you are interested in booking a photoshoot with us.</p>
+       <p><b>phone:</b>+91 8606808545 - India <br> +971 545808234 - UAE</p>
+       <p><b>Email:</b>robinsphotographyworld@gmail.com</p>
+       <p><b>Address: <br>India - UAE </b>
+              
+    </p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+<div class="col-lg-6 col-md-6">
+   
+   
+<div class="cnt-form">
+    <h3>Contact Form</h3>
+    <p>Interested to connect with us?</p>
+    <form id="contact_form" name="contact_form" method="post" >
+        <div class="mb-3 input">
+          <!-- <label for="email_addr">Email address</label> -->
+          <input type="email" required maxlength="50" class="form-control" 
+          id="email_addr" name="email" placeholder="name@example.com">
+        </div>
+        <div class="mb-3 input">
+          <!-- <label for="name_input">Name</label> -->
+          <input type="text" required maxlength="50" class="form-control" 
+          id="name_input" name="name" placeholder="Name">
+        </div>            
+        <div class="mb-3 input">
+            <!-- <label for="phone_input">Phone</label> -->
+            <input type="tel" required maxlength="50" class="form-control" 
+            id="phone_input" name="Phone" placeholder="Phone">
+          </div> 
+        <div class="mb-3 input">
+          <label for="message" class="text-secondary">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+        </div>
+      <!-- <div class="my-4">
+      <div class="g-recaptcha" data-sitekey="6LchOyEUAAAAAPo9l0WmIgFkGu5D6Gyq-MjsIHS1"></div>
+      </div> -->
+        <button type="submit" class="btn btn-primary px-4">Send</button>
+      </form>
+</div>
+
+</div>
+<!-- <div class="col-lg-6 col-md-6">
+    <div class="social-icon">
+       <div id="icon-f" class="s-icon"> <a href="#" target="_blank" ><img src="assets/img/icon/wedding photography in kerala-fb.png" alt=""></a></div>
+       <div  id="icon-i" class="s-icon"> <a href="#" target="_blank" ><img src="assets/img/icon/wedding photography in kerala-in.png" alt=""></a></div>
+        <div  id="icon-t" class="s-icon"><a href="#" target="_blank" ><img src="assets/img/icon/wedding photography in kerala-tw.png" alt=""></a></div>
+       <div id="icon-y" class="s-icon"> <a href="#" target="_blank" ><img src="assets/img/icon/wedding photography in kerala-yutb.png" alt=""></a></div>
+       
+      </div>
+</div> -->
+  </div>
+</div><br><br>
+<footer id="footer">
+
+</footer>
+
+
+
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/load-components.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> 
+</body>
+</html>

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&family=Kalnia:wght@300;400;500&family=Libre+Caslon+Display&family=Open+Sans:ital@1&family=Raleway:ital,wght@0,300;1,200;1,300;1,500&family=Work+Sans:wght@700&display=swap');
+
+footer {
+  background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+    margin-top: 100px;
+  }
+  
+  .social-icons {
+    margin-bottom: 20px;
+  }
+  
+  .icon {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .contact-info, .address {
+    margin-bottom: 10px;
+  }
+  footer i{
+    color: white;
+    font-size: 20px;
+  }
+  .footer_main span{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+   
+  }
+  .footer_main b{
+    font-size: 25px;
+  }
+  .footer_menu ul{
+    list-style: none;
+   
+  }
+  footer a,footer a:hover{
+    text-decoration: none;
+    color: white;
+  }
+  #scrollTopBtn {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background: #1e88e5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+
+  }
+ .foot_end{
+  text-align: center;
+  
+    /* height: 150px; */
+    padding: 10px;
+
+
+ }
+ .icon i{
+  font-size: 35px;
+ }
+ .foot_end a{
+  color: white;
+ }
