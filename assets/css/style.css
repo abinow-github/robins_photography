@@ -7,9 +7,6 @@ body {
     padding: 0;
    
     /* overflow: hidden; */
-   
-    
-    
 }
 
 header{
@@ -32,7 +29,7 @@ header{
 
 .navbar {
     background-color: transparent; 
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     /* height: 50px; */
@@ -47,13 +44,10 @@ nav a,nav a:hover{
   font-size: 13px !important;
 }
 .navbar-brand img {
-    width: 55%;
+    width: 150px;
     height: auto;
 }
 
-.navbar-nav .nav-item {
-    margin-right: 15px;
-}
 .dropdown-menu ul a{
   font-size: 13px !important;
   font-weight: normal !important;
@@ -95,14 +89,14 @@ nav a,nav a:hover{
     color: #fff;
 } */
 
-/* Custom styles for the carousel */
+/* ................. Custom styles for the carousel .............................*/
 .carousel-inner {
     height: 100vh; /* Set the height of the carousel */
 }
 .carousel .p{
   font-family: 'Dancing Script', cursive;
   position: absolute;
-  bottom: 4px;
+  bottom: 20px;
   color: white;
   z-index: 1;
   left: 44%;
@@ -189,51 +183,44 @@ nav a,nav a:hover{
     font-weight: 700;
 }
 
+/* ................. Custom styles for the carousel END.............................*/
 
 
 
-.navbar-scrolled {
-    background-color:white;
-   
-  } 
 
 @media screen and (max-width:767px) {
-  
-
   .navbar-brand img {
     width: 30%;
-     
 }  
+.crsl{
+  height: 460px;
+}
 .navbar-toggler {
   outline: none; /* Remove outline on small screens */
   box-shadow: none; /* Remove box shadow on small screens */
 }
 .navbar.navbar-bg {
   background-color: #fff; /* Background color change for small screens */
-  
 }
 .navbar a{
   color: black !important;
 }
-
 .navbar-clicked {
     background-color: rgb(160, 154, 154);
      /* Change this to your desired background color */
   }
 header{
-    height: 700px !important;
+    height: 460px !important;
 }
  header .carousel-item{
-    height: 700px;
     width: auto;
 }
-header .carousel-item img{
-    width: 100% !important;
-    height: 700px !important;
+header .carousel-item img {
+  height: 460px !important;
+  object-position: top;
+  transform: translateX(-180px);
+  width: auto;
 }
-
-
-
 .ab-img img{
     width: 100% !important;
 }
@@ -241,9 +228,7 @@ header .carousel-item img{
     display: none;
 }
 .about-us-1{
-    background: rgb(77, 72, 72);
-    
-    
+    background: rgb(77, 72, 72);   
 }
 
 .lg-hide{
@@ -266,23 +251,124 @@ header .carousel-item img{
   width: 100%;
 }
 .carousel .p{
-  bottom: 40px;
+  bottom: 20px;
   left: 27%;
+}
+.carousel-inner{
+  height: 460px;
 }
 .about_col p{
   text-align: justify;
 }
 
-}
+}/* END @media */
+
 .hidden-section{
   display: none;
 }
 .navbar button{
   position: fixed;
   top: 16px;
-  right: 8px;
- 
+  right: 30px;
+  i{
+    font-size: 30px;
+    color: white;
+  }
 }
+/* new navbar styles */
+.navbar-collapse{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30%;
+  background-color: white;
+  z-index: 1000;
+  display: block !important;
+  height: 100vh;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateX(100%);
+  .nav-close-btn-div{
+    height: 60px;
+    padding-right: 30px;
+    justify-content: right;
+    display: flex;
+    .close-nav{
+      background-color: white;
+      border: 0;
+      font-size: 30px;
+    }
+  }
+  .navbar-nav .nav-item {
+    margin-right: 15px;
+    padding-left: 15px;
+    border: 1px solid #3935351a;
+    border-left: 0;
+    border-right: 0;
+ }
+ .navbar-nav .nav-item .nav-link{
+  color: black !important;
+  height: 50px;
+  align-items: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  img{
+    height: 25px;
+    padding-right: 8px;
+  }
+ }
+}
+.navbar-collapse.show{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.div-for-nav-overlay{
+  position: fixed;
+  width: 100%;
+  background-color: rgb(0 0 0 / 67%);
+  height: 100vh;
+  z-index: 999;
+  display: none;
+  opacity: 0;
+  transition: 0.4s;
+}.div-for-nav-overlay.show{
+  display: block;
+  opacity: 1;
+}
+@media screen and (max-width:992px) and (min-width:765px) {
+  .navbar-collapse{
+    width: 50%;
+  }
+}
+@media screen and (max-width:765px) {
+  .navbar-collapse{
+    width: 80%;
+  }
+  .navbar button{
+    i{
+      font-size: 25px;
+      color: white;
+    }
+   
+  }
+}
+@media screen and (max-width:330px) {
+  .navbar-collapse{
+    width: 100%;
+  }
+}
+.navbar.navbar-scrolled{
+  button{
+    i{
+      color: black;
+    }
+   
+  }
+}
+/* new navbar styles END */
+
+
 
 
 /* about */
@@ -467,10 +553,11 @@ margin: 25px 0;
 .section-9 .card {
   border: 1px solid #ddd;
   border-radius: 5px;
-  overflow: hidden;
   margin: 0 5px;
+  border: 0 ;
+  text-align: center;
   height: 240px !important;
-  width: 300px;
+  padding: 10px;
   
 }
 
@@ -478,7 +565,7 @@ margin: 25px 0;
   /* width: 100%; */
   height: auto;
   display: block;
-  width: 16%;
+  width: 40px;
 }
 
 .review-slider .card-content {
@@ -492,6 +579,34 @@ margin: 25px 0;
   text-align: left;
   font-size: smaller;
   padding: 5px;
+  text-align: center;
+  position: relative;
+}.section-9 p.p{
+  width: 50%;
+  margin: auto;
+}.section-9 p.p::before {
+  position: absolute;
+  color: #00000085;
+  left: -20px;
+  top: -20px;
+  content: '\f10d';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  font-size: 25px;
+}.section-9 p.p::after {
+  color: #00000085;
+  position: absolute;
+  right: -15px;
+  bottom: -15px;
+  content: '\f10e';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  font-size: 25px;
+}
+@media screen and (max-width:765px) {
+  .section-9 p.p{
+    width: 100%;
+  }
 }
 
 .rating {
@@ -500,7 +615,8 @@ margin: 25px 0;
 }
 .review-slider .rating{
   margin-top: -28px;
-  margin-left: 60px;
+  display: flex;
+    justify-content: center;
 }
 
 .star {
@@ -536,6 +652,7 @@ margin: 25px 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 .slick-prev,.slick-next{
   display: none !important;
@@ -547,9 +664,6 @@ margin: 25px 0;
   flex-direction: column;
   align-items: center;
   margin-left: 30px;
-
- 
-
 }
 .review-img{
   align-items: center;
@@ -562,11 +676,11 @@ margin: 25px 0;
 }
 .review-slider{
 width: 70%;
+margin: auto;
 }
 .section-9{
   padding: 10px;
   display: flex;
-  background: #e6edf3;
   justify-content: space-between;
   margin-bottom: 50px;
 }
@@ -584,7 +698,55 @@ width: 100% !important;
   flex-direction: column;
 
 }
-
-
-
 }
+/* .................. testimornial END .............................*/
+
+/* ................... New service-section  ............................... */
+.service-section{
+  margin-bottom: 50px;
+  .card{
+    margin: 10px;
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+    border: 0;
+    .overlay{
+      position: absolute;
+      width: 230px;
+      color: rgb(0, 0, 0);
+      bottom: 0;
+      padding: 10px;
+      text-align: center;
+      background-color: white;
+    }
+  }
+}
+
+@media screen and (max-width:765px) {
+  .service-section{
+    .card{
+      margin: 0;
+      position: relative;
+      height: 150px;
+      overflow: hidden;
+      border: 0;
+      img{
+        height: 100%;
+        object-fit: cover;
+      }
+      .overlay{
+        position: absolute;
+        width: 100%;
+        color: rgb(0, 0, 0);
+        bottom: 0;
+        padding: 10px;
+        text-align: center;
+        background-color: white;
+        h5{
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+/* ................... New service-section END ............................... */

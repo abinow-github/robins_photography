@@ -1,0 +1,84 @@
+@-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes preloader {
+    0%{
+      opacity: 1;
+    }
+    99%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 0;
+      display: none;
+      visibility: hidden;
+    }
+  }
+    .preloader{
+      position: fixed;
+      background: white;
+      width: 100%;
+      height: 100vh;
+      z-index: 10000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .img-div{
+        width: 150px;
+        height: 150px;
+        position: relative;
+        -webkit-animation: rotate-center 2s linear infinite both;
+          animation: rotate-center 2s linear infinite both;
+        img{
+          position: absolute;
+          width: 100%;
+        }
+      }
+    }
+    .preloader.loaded{
+      animation: preloader 2s ease-out both;
+        .img-div{
+            -webkit-animation: rotate-center 1.5s linear both;
+          animation: rotate-center 1.5s linear both;
+        }
+    }
+
+    .preloader .img-div img{
+        opacity: 1;
+        transition: 0.5s;
+    }.preloader.loaded .img-div img:nth-child(1){
+        transform: translate(-44px, -75px);
+            opacity: 0;
+    }.preloader.loaded .img-div img:nth-child(2){
+        transform: translate(75px, -75px);
+            opacity: 0;
+    }.preloader.loaded .img-div img:nth-child(3){
+        transform: translate(92px, 70px);
+            opacity: 0;
+    }.preloader.loaded .img-div img:nth-child(4){
+       transform: translate(-24px, 114px);
+            opacity: 0;
+    }.preloader.loaded .img-div img:nth-child(5){
+       transform: translate(-82px, 78px);
+            opacity: 0;
+    }.preloader.loaded .img-div img:nth-child(6){
+       transform: translate(-75px, 7px);
+            opacity: 0;
+    }

@@ -25,60 +25,64 @@ font-family: 'Work Sans', sans-serif; */
     
     <header>
       
-      <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid">
+      <nav class="navbar">
+        <div class="container-fluid" style="padding: 0 20px;">
             <a class="navbar-brand" href="#"><img src="assets/img/kerala_best_photography-removebg-preview.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="showNav()">
                <i class="fa-solid fa-bars"></i>
             </button>
-            <div class="collapse navbar-collapse nav-list" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about_us.html"> ABOUT US</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">GALLERY</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="blog.html">BLOG</a>
-                  </li>
-
-                    <li class="nav-item dropdown" onmouseover="showGallery()">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownGallery" role="button"
-                           data-bs-toggle="dropdown" aria-expanded="false">
-                           SERVICES
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownGallery" id="galleryDropdown">
-                            <li><a class="dropdown-item" href="wedding_photography.html">WEDDING PHOTOGRAPHY</a></li>
-                            <li><a class="dropdown-item" href="bridal_sessions.html">BRIDAL SESSIONS</a></li>
-                            <li><a class="dropdown-item" href="new_born.html">NEWBORN PHOTOGRAPHY </a></li>
-                            <li><a class="dropdown-item" href="couple_photography.html">COUPLE PHOTOGRAPHY</a></li>
-                            <li><a class="dropdown-item" href="family_photography.html">FAMILY PHOTOSHOOT</a></li>
-                            <li><a class="dropdown-item" href="maternity_photography.html">MATERNITY PHOTOSHOOT</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">CONTACT</a>
-                    </li>
-                </ul>
-            </div>
         </div>
     </nav>
+
+    <div class="collapse navbar-collapse nav-list" id="navbarSupportedContent">
+      <div class="nav-close-btn-div pr-5">
+        <button class="close-nav" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"><span><img src="assets/img/icon/home.png" alt=""></span>HOME</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="about_us.html"><span><img src="assets/img/icon/about.png" alt=""></span> ABOUT US</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="wedding_photography.html"><span><img src="assets/img/icon/wedding.png" alt=""></span>Wedding Photography</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="gallery.html"><span><img src="assets/img/icon/gallery.png" alt=""></span>GALLERY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html"><span><img src="assets/img/icon/blog.png" alt=""></span>BLOG</a>
+        </li>
+          <li class="nav-item">
+              <a class="nav-link" href="contact.html"><span><img src="assets/img/icon/contact.png" alt=""></span>CONTACT</a>
+          </li>
+      </ul>
+  </div>
+  <div class="div-for-nav-overlay" id="navbg"></div>
+
+  <script>
+    ///////show navbar when button clicked
+function showNav(){
+  let nav=document.getElementById('navbarSupportedContent')
+  let navbg=document.getElementById('navbg')
+  nav.classList.add('show')
+  navbg.classList.add('show')
+}
+function closeNav(){
+  let nav=document.getElementById('navbarSupportedContent')
+  let navbg=document.getElementById('navbg')
+  nav.classList.remove('show')
+  navbg.classList.remove('show')
+}
+  </script>
     
-<div class="head_img sm-hide blog_head">
-  <img src="assets/img/contact/wedding photography in kerala.jpg" alt="" >
-</div>
-<div class="head_img lg-hide">
-  <img src="assets/img/contact/best wedding photography in kerala.jpg" alt="">
-</div>
+
 </header>
 
 
-<div class="container map">
+<div class="container map" style="margin-top: 100px;">
 <div class="row w-100">
     <div class="col-lg-6 col-md-6 my-4">
       <iframe
@@ -88,14 +92,13 @@ font-family: 'Work Sans', sans-serif; */
     <div class="col-lg-6 col-md-6 my-4 d-flex map-content">
       <div>
         <span>our location</span>
-        <h4>We are available for worldwide orders.</h4>
-        <p>Robins photography is available for worldwide photoshoot!.
+        <p>We available for worldwide photoshoot!.
             If you are interested in booking a photoshoot with us.</p>
-       <p><b>phone:</b>+91 8606808545 - India <br> +971 545808234 - UAE</p>
-       <p><b>Email:</b>robinsphotographyworld@gmail.com</p>
-       <p><b>Address: <br>India - UAE </b>
+       <p><b>Email : </b>robinsphotography@gmail.com</p>
+       <p><b>Address: </p>
+        <a href="tel:+91 8606808545" style="background-color: dimgray;">India</a> <a href="tel:+971 545808234">UAE</a></b>
               
-    </p>
+    
       </div>
     </div>
   </div>

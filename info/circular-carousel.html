@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> 2much_tech - Circular Carousel MotionPath - Draggable &amp; Inertia</title>
+  <link rel='stylesheet' href='https://codepen.io/GreenSock/pen/xxmzBrw.css'>
+
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+}
+.body {
+  background: #2f2f2f;
+}
+
+.box {
+  width: 75px;
+  height: 75px;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2f2f2f;
+}
+</style>
+<body>
+<!-- partial:index.partial.html -->
+<div class="wrapper">
+  <div class="container">
+    <svg viewBox="0 0 400 400">
+      <path stroke-width="2" stroke="red" id="myPath" fill="none" d="M396,200 C396,308.24781 308.24781,396 200,396 91.75219,396 4,308.24781 4,200 4,91.75219 91.75219,4 200,4 308.24781,4 396,91.75219 396,200 z"></path>
+    </svg>
+    <div class="box gradient-blue-2">box 1</div>
+    <div class="box gradient-blue-2">box 2</div>
+    <div class="box gradient-blue-2">box 3</div>
+    <div class="box gradient-blue-2">box 4</div>
+    <div class="box gradient-blue-2">box 5</div>
+    <div class="box gradient-blue-2">box 6</div>
+    <div class="box gradient-blue-2">box 7</div>
+    <div class="box gradient-blue-2">box 8</div>
+    <div class="box gradient-blue-2">box 9</div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://unpkg.com/gsap@3/dist/gsap.min.js'></script>
+<script src='https://unpkg.com/gsap@3/dist/MotionPathPlugin.min.js'></script>
+<script src='https://unpkg.com/gsap@3/dist/Draggable.min.js'></script>
+<script src='https://assets.codepen.io/16327/InertiaPlugin.min.js'></script>
+
+<script>
+    console.clear();
+
+gsap.registerPlugin(Draggable, InertiaPlugin, MotionPathPlugin);
+const boxes = gsap.utils.toArray(".box");
+
+gsap.set(boxes, {
+  motionPath: {
+    path: "#myPath",
+    align: "#myPath",
+    alignOrigin: [0.5, 0.5],
+    start: -0.25,
+    end: (i) => i / boxes.length - 0.25,
+    autoRotate: true
+  }
+});
+
+Draggable.create(".container", {
+  type: "rotation",
+  inertia: true,
+  snap: (endVal) => gsap.utils.snap(360 / boxes.length, endVal)
+});
+</script>
+</body>
+</html>

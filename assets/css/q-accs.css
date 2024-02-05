@@ -9,7 +9,7 @@
    
 }
 .wts-icn{
-    bottom: 20vh;
+    bottom: 100px;
     transform: translateY(50px);
     transition: 0.5s;
     opacity: 0;
@@ -25,11 +25,11 @@
     transform: translateY(0);
 }
 .cal-icn{
-    bottom: 20vh;
+    bottom: 40px;
     transform: translateY(15px);
     transition: 0.5s;
     opacity: 0;
-    left: 20px;
+    right: 20px;
    
     background-color: rgb(133, 7, 123);
 }

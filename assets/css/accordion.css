@@ -1,12 +1,13 @@
 /* q & a */
 .accordion {
-   
+   position: relative;
     background: white;
-    color: rgb(70, 65, 65);
+    
+    color: rgb(70 65 65 / 71%);
     cursor: pointer;
     padding: 18px;
     width: 100%;
-   border: 1px solid rgb(119, 122, 119);
+   border: 0;
     text-align: left;
     outline: none;
     font-size: 18px;
@@ -16,7 +17,7 @@
     justify-content: space-between;
   }
   .section-q{
-    padding: 25px;
+    padding: 25px 0;
     margin-bottom: 50px;
   }
   .section-q h2{
@@ -24,20 +25,17 @@
   }
   
   .section-q .active, .accordion:hover {
-    background-color: rgb(119, 122, 119);
-    color: white;
+    color: rgb(70, 65, 65);
+    .overlay:nth-child(odd){
+      opacity: 1;
+      height: 10px;
+    }
+     .overlay:nth-child(even){
+      opacity: 1;
+      width: 10px;
+    }
   }
   
-  .accordion:after {
-    content: '\002B';
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-  }
-  
-  .section-q .active:after {
-    content: "\2212";
-  }
   
   .panel {
     padding: 0px 18px;
@@ -67,4 +65,44 @@
  
       
   }
-  /* q & a */
+/* position absolute lines */
+.accordion .overlay{
+  position: absolute;
+  background: #b51201;
+  transition: 0.5s;
+  opacity: 0;
+  border-radius: 2px;
+}
+.accordion .overlay:nth-child(odd){
+  height: 20px;
+  width: 2px;
+}
+.accordion .overlay:nth-child(even){
+  width: 20px;
+  height: 2px;
+}
+
+.accordion .overlay:nth-child(1),
+.accordion .overlay:nth-child(2)
+{
+  left: 0;
+  top: 0;
+}
+.accordion .overlay:nth-child(3),
+.accordion .overlay:nth-child(4)
+{
+  right: 0;
+  top: 0;
+}
+.accordion .overlay:nth-child(5),
+.accordion .overlay:nth-child(6)
+{
+  right: 0;
+  bottom: 0;
+}
+.accordion .overlay:nth-child(7),
+.accordion .overlay:nth-child(8)
+{
+  left: 0;
+  bottom: 0;
+}

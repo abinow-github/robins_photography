@@ -1,3 +1,14 @@
+/////////preloader function
+var load=document.querySelector(".preloader")
+let img=document.getElementById('preload-img-div')
+      window.addEventListener("load",function(){
+        setTimeout(function () {
+         load.classList.add("loaded");
+         setTimeout(function(){
+          img.classList.add("loaded");
+         },1000)
+        }, 300);
+      })
 
 
 
@@ -87,10 +98,10 @@ $(document).ready(function () {
 
 $(document).ready(function(){
   $('.review-slider').slick({
-      slidesToShow: 3,
+      slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 1500,
       arrows: true,
       dots: false,
       pauseOnHover: true,
@@ -98,7 +109,7 @@ $(document).ready(function(){
           {
               breakpoint: 768,
               settings: {
-                  slidesToShow: 3
+                  slidesToShow: 1
               }
           },
           {
