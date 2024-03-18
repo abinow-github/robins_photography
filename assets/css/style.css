@@ -110,9 +110,13 @@ nav a,nav a:hover{
 
 .carousel-item {
     position: relative;
+    height: 100%;
 }
 .carousel-item img{
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .carousel-caption-r {
     position: absolute;
@@ -399,6 +403,29 @@ header .carousel-item img {
 }
 .about_image img{
   width: 100%;
+}
+
+.award-div{
+  gap: 5px;
+  margin: auto;
+  text-align: center;
+  .leaf{
+    width: 50px;
+  }
+  .leaf:nth-child(1){
+    transform: scaleX(-1);
+  }
+  h1{
+    font-size: 20px;
+    text-align: center;
+  text-transform: capitalize;
+  font-weight: bold;
+  background-size: cover;
+  background: linear-gradient(rgb(255 30 0), rgb(0 30 144 / 59%));
+  background: -webkit-linear-gradient(rgb(167 116 17 / 78%), rgb(216 180 91));
+   background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
 }
 .un-img{
   text-align: center;
