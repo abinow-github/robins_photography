@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&family=Kalnia:wght@300;400;500&family=Libre+Caslon+Display&family=Open+Sans:ital@1&family=Raleway:ital,wght@0,300;1,200;1,300;1,500&family=Work+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import url(../Demo_Fonts/Fontspring-DEMO-isabel-black-italic.otf);
 .cal-icn,.wts-icn{
   display: none;
 }
@@ -17,8 +19,7 @@
   
   
   .section-w p{
-    font-family: 'Raleway', sans-serif;
-    font-style: italic;
+    font-family: Isabel Light;
     color: #787b7c;
     line-height: 30px;
     text-align: justify;
@@ -46,11 +47,14 @@
     display: none;
   }
   .section-w span{
-    font-family: 'Raleway', sans-serif;
-    color: gray;
+    font-family: Isabel Light;
+    color: #787b7c;
+    line-height: 27px;
+    text-align: justify;
   }
   .section-w h4{
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Protest Riot', sans-serif;
+    font-style: italic;
     color: gray;
     font-size: 40px;
   }

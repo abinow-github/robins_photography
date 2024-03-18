@@ -2,7 +2,7 @@
 .accordion {
    position: relative;
     background: white;
-    
+    font-family: Isabel Light;
     color: rgb(70 65 65 / 71%);
     cursor: pointer;
     padding: 18px;
@@ -25,7 +25,7 @@
   }
   
   .section-q .active, .accordion:hover {
-    color: rgb(70, 65, 65);
+    color: rgb(167 0 0);
     .overlay:nth-child(odd){
       opacity: 1;
       height: 10px;
@@ -40,7 +40,7 @@
   .panel {
     padding: 0px 18px;
     background-color: white;
-    color: black;
+    color: #000000a9;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&family=Kalnia:wght@300;400;500&family=Libre+Caslon+Display&family=Open+Sans:ital@1&family=Raleway:ital,wght@0,300;1,200;1,300;1,500&family=Work+Sans:wght@700&display=swap');
+@import url(../Demo_Fonts/Fontspring-DEMO-isabel-black-italic.otf);
 
 /* Custom styles for the navigation bar */
 
@@ -258,7 +259,8 @@ header .carousel-item img {
   height: 460px;
 }
 .about_col p{
-  text-align: justify;
+  text-align: center;
+  font-size: 1rem !important;
 }
 
 }/* END @media */
@@ -388,7 +390,9 @@ header .carousel-item img {
     font-family: 'Work Sans', sans-serif;
 }
 .about_col p{
-  color: gray;
+  color: #514141;
+  font-family: Isabel Light;
+  font-size: 1.2rem;
 }
 .about_image{
   width: 117px;
@@ -582,8 +586,9 @@ margin: 25px 0;
   text-align: center;
   position: relative;
 }.section-9 p.p{
-  width: 50%;
+  width: 60%;
   margin: auto;
+  font-family: Isabel Light;
 }.section-9 p.p::before {
   position: absolute;
   color: #00000085;
