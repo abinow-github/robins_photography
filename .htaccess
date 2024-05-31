@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^home$ index.html [L]
+RewriteRule ^about-us$ about_us.html [L]
+RewriteRule ^contact-us$ contact.html [L]
+RewriteRule ^bridal-sessions$ bridal_sessions.html [L]
+RewriteRule ^couple-photography$ couple_photography.html [L]
+RewriteRule ^family-photography$ family_photography.html [L]
+RewriteRule ^maternity-photography$ maternity_photography.html [L]
+RewriteRule ^wedding-photography$ wedding_photography.html [L]
+RewriteRule ^new-born$ new_born.html [L]
